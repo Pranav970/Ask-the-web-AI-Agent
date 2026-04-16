@@ -1,0 +1,37 @@
+# ── Core Framework ────────────────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-dotenv==1.0.1
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# ── Anthropic Claude ─────────────────────────────────────────────────────────
+anthropic==0.40.0
+
+# ── HTTP & Web scraping ───────────────────────────────────────────────────────
+httpx==0.27.2
+beautifulsoup4==4.12.3
+lxml==5.3.0
+
+# ── Search APIs ──────────────────────────────────────────────────────────────
+tavily-python==0.5.0
+
+# ── Database (optional — app runs without it) ─────────────────────────────────
+asyncpg==0.30.0
+sqlalchemy[asyncio]==2.0.36
+
+# ── Redis caching (optional) ──────────────────────────────────────────────────
+# FIX: use redis[asyncio] instead of separate aioredis (deprecated)
+redis[asyncio]==5.1.1
+
+# ── Logging ───────────────────────────────────────────────────────────────────
+loguru==0.7.2
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+tenacity==9.0.0
+python-multipart==0.0.12
+orjson==3.10.7
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.3.3
+pytest-asyncio==0.24.0
